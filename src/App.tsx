@@ -18,7 +18,7 @@ const globeConfig: GlobeConfig = {
   directionalLeftLight: "#ffffff",
   directionalTopLight: "#ffffff",
   pointLight: "#ffffff",
-  arcTime: 1500,
+  arcTime: 1400,
   arcLength: 0.7,
   rings: 2,
   maxRings: 5,
@@ -74,7 +74,7 @@ const data: Position[] = [
     endLat: -22.9068,
     endLng: -43.1729,
     arcAlt: 0.4,
-    color: "#ff0000", 
+    color: "#0000ff", 
   },
   {
     order: 5,
@@ -83,7 +83,7 @@ const data: Position[] = [
     endLat: 37.7749,
     endLng: -122.4194,
     arcAlt: 0.5,
-    color: "#ff00ff", 
+    color: "#00ff00", 
   },
   {
     order: 6,
@@ -149,11 +149,22 @@ function App() {
 
   return (
     <>
-     <h1>AJ's AI News Application</h1>
+    <div className="hero">
 
-     <div style={{ width: "50vw", height: "80vh" }}>
-      <World globeConfig={globeConfig} data={data} />
+      <div className="hero-head">
+        <h1>AJ's AI News Application</h1>
+      </div>
+
+      {/* GLOBE DIV */}
+      <div className="globe">
+        <div style={{ width: "50vw", height: "80vh" }}>
+          <World globeConfig={globeConfig} data={data} />
+        </div>
+      </div>
+
     </div>
+
+
     </>
 
     
