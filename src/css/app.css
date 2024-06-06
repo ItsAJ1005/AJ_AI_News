@@ -1,0 +1,30 @@
+
+
+header {
+    height: 5vh;
+    border-bottom: grey 0.4px solid;
+        
+    
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.hero-head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.hero-head > h1 { font-size: 2.8rem; }
+.hero-head > p { 
+    font-size: 1.4rem; 
+    max-width: 50vw ;
+    text-align: center;
+    line-height: 32px;
+}
