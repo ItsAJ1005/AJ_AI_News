@@ -1,0 +1,35 @@
+
+#root, html, body {
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  color: #fff;
+  font-family: sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html { scroll-behavior: smooth; }
+
+*::selection {
+  background-color: #373738;
+  color: #ffffff;
+}
+
+body::-webkit-scrollbar {
+  display: block;
+  width: 16px;
+  background: #2C2C2C;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(167, 167, 167);
+  border-radius: 60px;
+  background-clip: content-box;
+  border: solid 3.7px transparent;
+}

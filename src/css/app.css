@@ -1,0 +1,46 @@
+
+
+header {
+    height: 5vh;    
+}
+.logo {
+    display: flex;
+    gap: 4px;
+    margin: 10px;
+}
+.brand-name {
+    margin-top: 5px;
+    font-size: 1.8rem;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.hero-head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: -6px;
+
+}
+
+.hero-head > h1 { font-size: 2.4rem; }
+.hero-head > p { 
+    font-size: 1.2rem; 
+    margin: 0;
+    padding: 0;
+    max-width: 45vw ;
+    text-align: center;
+    line-height: 28px;
+    color: #66656C;
+}
+
+
+.p1 {
+    height: 100%;
+    width: 100%;
+}

@@ -1,6 +1,9 @@
 import React, {useEffect} from "react";
 import alanBtn from '@alan-ai/alan-sdk-web'
 import { World, GlobeConfig, Position } from "./components/ui/WorldComponent.tsx";
+import './css/app.css';
+import Header from "./components/ui/Header.jsx";
+
 
 const ajKey = 'adcafd1fb6f76c301ff0460a1aa7e0db2e956eca572e1d8b807a3e2338fdd0dc/stage';
 
@@ -149,20 +152,26 @@ function App() {
 
   return (
     <>
-    <div className="hero">
+    <Header/>
 
+    <div className="hero">
       <div className="hero-head">
-        <h1>AJ's AI News Application</h1>
+        <h1>AI News Application</h1>
+        <p>Discover the World of News: Interact, Customize, and Stay Informed with Our Voice-Assisted News Application!</p>
       </div>
 
       {/* GLOBE DIV */}
       <div className="globe">
-        <div style={{ width: "50vw", height: "80vh" }}>
+        <div style={{ width: "80vw", height: "80vh" }}>
           <World globeConfig={globeConfig} data={data} />
         </div>
       </div>
 
     </div>
+
+    <main className="p1">
+      
+    </main>
 
 
     </>
