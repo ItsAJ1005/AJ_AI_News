@@ -1,10 +1,16 @@
 
 
 header {
-    height: 5vh;
-    border-bottom: grey 0.4px solid;
-        
-    
+    height: 5vh;    
+}
+.logo {
+    display: flex;
+    gap: 4px;
+    margin: 10px;
+}
+.brand-name {
+    margin-top: 5px;
+    font-size: 1.8rem;
 }
 
 .hero {
@@ -21,10 +27,12 @@ header {
 
 }
 
-.hero-head > h1 { font-size: 2.8rem; }
+.hero-head > h1 { font-size: 2.4rem; }
 .hero-head > p { 
-    font-size: 1.4rem; 
-    max-width: 50vw ;
+    font-size: 1.2rem; 
+    margin: 0;
+    padding: 0;
+    max-width: 45vw ;
     text-align: center;
-    line-height: 32px;
+    line-height: 28px;
 }

@@ -152,18 +152,17 @@ function App() {
 
   return (
     <>
+    <Header/>
+
     <div className="hero">
-
-      <Header/>
-
       <div className="hero-head">
-        <h1>AJ's AI News Application</h1>
+        <h1>AI News Application</h1>
         <p>Discover the World of News: Interact, Customize, and Stay Informed with Our Voice-Assisted News Application!</p>
       </div>
 
       {/* GLOBE DIV */}
       <div className="globe">
-        <div style={{ width: "50vw", height: "80vh" }}>
+        <div style={{ width: "55vw", height: "80vh" }}>
           <World globeConfig={globeConfig} data={data} />
         </div>
       </div>
