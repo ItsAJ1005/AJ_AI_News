@@ -16,3 +16,20 @@ body {
 }
 
 html { scroll-behavior: smooth; }
+
+*::selection {
+  background-color: #373738;
+  color: #ffffff;
+}
+
+body::-webkit-scrollbar {
+  display: block;
+  width: 16px;
+  background: #2C2C2C;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(167, 167, 167);
+  border-radius: 60px;
+  background-clip: content-box;
+  border: solid 3.7px transparent;
+}

@@ -24,6 +24,7 @@ header {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    gap: -6px;
 
 }
 
@@ -35,4 +36,11 @@ header {
     max-width: 45vw ;
     text-align: center;
     line-height: 28px;
+    color: #66656C;
+}
+
+
+.p1 {
+    height: 100%;
+    width: 100%;
 }
