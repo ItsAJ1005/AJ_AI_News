@@ -33,3 +33,11 @@ body::-webkit-scrollbar-thumb {
   background-clip: content-box;
   border: solid 3.7px transparent;
 }
+
+body::-webkit-scrollbar-button:single-button {
+  background-color: #3f3a3a;
+  display: block;
+  border-style: solid black;
+  height: 13px;
+  width: 16px;
+}

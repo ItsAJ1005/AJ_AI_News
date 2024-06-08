@@ -162,7 +162,7 @@ function App() {
 
       {/* GLOBE DIV */}
       <div className="globe">
-        <div style={{ width: "80vw", height: "80vh" }}>
+        <div style={{ width: "90vw", height: "80vh" }}>
           <World globeConfig={globeConfig} data={data} />
         </div>
       </div>
