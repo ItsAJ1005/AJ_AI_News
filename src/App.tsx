@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React, {useEffect, useState } from "react";
 import alanBtn from '@alan-ai/alan-sdk-web'
 import { World, GlobeConfig, Position } from "./components/ui/WorldComponent.tsx";
 import './css/app.css';
@@ -137,19 +137,27 @@ const data: Position[] = [
   // Add more data as needed
 ];
 
+interface CommandData {
+  command: string;
+  articles: any[];
+}
+
 function App() {
+
+  const [articles, setArticles] = useState<any[]>([]);
 
   useEffect(() => {
     alanBtn({
       key: ajKey,
-      onCommand: (commandData: any) => {
-        if (commandData.command === 'testCommand') {
-          alert('This code was executed');
+      onCommand: (commandData: object) => {
+        const { command, articles } = commandData as CommandData;
+        if (command === 'newHeadlines') {
+          setArticles(articles);
         }
       }
     });
   }, []);
-
+  
   return (
     <>
     <Header/>
