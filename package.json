@@ -6,6 +6,7 @@
     "@alan-ai/alan-sdk-web": "^1.8.54",
     "@react-three/drei": "^9.106.0",
     "@react-three/fiber": "^8.16.8",
+    "@tabler/icons-react": "^3.5.0",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
