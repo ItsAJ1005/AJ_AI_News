@@ -3,6 +3,7 @@ import alanBtn from '@alan-ai/alan-sdk-web'
 import { World, GlobeConfig, Position } from "./components/ui/WorldComponent.tsx";
 import './css/app.css';
 import Header from "./components/ui/Header.jsx";
+import { BentoGrid, BentoGridItem } from "./components/ui/bento-grid.tsx";
 
 
 const ajKey = 'adcafd1fb6f76c301ff0460a1aa7e0db2e956eca572e1d8b807a3e2338fdd0dc/stage';
@@ -178,7 +179,9 @@ function App() {
     </div>
 
     <main className="p1">
-      
+      <canvas className="bent-grid">
+        <BentoGrid />
+      </canvas>
     </main>
 
 
