@@ -154,6 +154,7 @@ function App() {
         const { command, articles } = commandData as CommandData;
         if (command === 'newHeadlines') {
           setArticles(articles);
+          console.log(articles);
         }
       }
     });
