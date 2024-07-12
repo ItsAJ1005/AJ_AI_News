@@ -179,13 +179,11 @@ function App() {
     </div>
 
     <main className="p1">
+      <h1>News</h1>
     <NewsCards articles={articles} activeArticle={articles} />
     </main>
 
-
     </>
-
-    
   );
 }
 
